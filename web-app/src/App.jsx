@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div style={{ padding: 40 }}>
-      <h1>📮 랜덤 펜팔</h1>
+      <h1>📮편지 가게</h1>
 
       <input
         placeholder="닉네임"
