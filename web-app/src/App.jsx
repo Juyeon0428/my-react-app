@@ -1,26 +1,11 @@
-import { useState } from "react";
-import WritePage from "./pages/WritePage";
-import ResultPage from "./pages/ResultPage";
-
 function App() {
-  const [receivedLetter, setReceivedLetter] = useState(null);
-
-  const handleSubmit = async (nickname, content) => {
-    // 지금은 가짜 데이터 (백엔드는 다음 단계)
-    const fakeLetter = {
-      nickname: "익명의 누군가",
-      content: "어떤 날에는 이유 없이 마음이 무거웠다.",
-    };
-
-    setReceivedLetter(fakeLetter);
-  };
-
   return (
     <div>
-      {!receivedLetter && <WritePage onSubmit={handleSubmit} />}
-      {receivedLetter && <ResultPage letter={receivedLetter} />}
+      <h1>펜팔 사이트</h1>
+      <p>여기에 글을 남기면 랜덤 편지를 받아요</p>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
+
